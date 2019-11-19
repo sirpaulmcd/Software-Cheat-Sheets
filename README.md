@@ -1,1 +1,1 @@
-A repository for software engineering cheat sheets.
+A repository for software engineering cheat sheets and summaries.
