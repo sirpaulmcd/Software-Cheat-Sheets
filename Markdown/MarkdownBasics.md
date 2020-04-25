@@ -23,18 +23,31 @@ Visual Studio Code uses the [CommonMark](http://commonmark.org/) Markdown specif
 ---
 
 ## Headers
-### Headers 1-6 are defined using the '#' symbol:
+### Headers are defined using the '#' symbol:
 
     # H1 Header 
     ## H2 Header
     ### H3 Header
     #### H4 Header
-   
+    etc.
+
+    Alternative H1 Header 
+    ===
+
+    Alternative H2 Header
+    ---
 
 # H1 Header 
 ## H2 Header
 ### H3 Header
 #### H4 Header
+etc.
+
+Alternative H1 Header 
+===
+
+Alternative H2 Header
+---
 
 ---
 
@@ -42,9 +55,9 @@ Visual Studio Code uses the [CommonMark](http://commonmark.org/) Markdown specif
 
 ### Quotes are defined using the  '>' symbol:
 
-    > This is an example quote
+    > Did somebody say pasta?
 
-> This is an example
+> Did somebody say pasta?
 
 ### Quotes can be added on top of other formatting. They are useful for TODO items:
 
@@ -62,7 +75,7 @@ Visual Studio Code uses the [CommonMark](http://commonmark.org/) Markdown specif
 
     Italicize using single *asterisks* or _underscores_
 
-    Underline using HTML <ins>ins tags</ins> or <u>u tags</u>
+    Underline using HTML <ins>ins tags</ins>
 
     Strikethrough using double ~~tildes~~ 
 
@@ -72,7 +85,7 @@ Bold using double **asterisks** or __underscores__
 
 Italicize using single *asterisks* or _underscores_
 
-Underline using HTML <ins>ins tags</ins> or <u>u tags</u>
+Underline using HTML <ins>ins tags</ins>
 
 Strikethrough using double ~~tildes~~ 
 
@@ -82,13 +95,20 @@ Do multiple using a ~~<u>_**combination**_</u>~~ of the above
 
 ## Horizontal Separators
 ### Horizontal separators can be created with hypens, asterisks, or underscores:
-
+    Hyphens:
+    
     ---
+    Asterisks:
     ***
+    Underscores:
     ___
 
+Hyphens:
+
 ---
+Asterisks:
 ***
+Underscores:
 ___
 
 ## Lists
@@ -137,10 +157,10 @@ ___
 
 ### External Links:
 
-    Nameless links can be in the form of:
+    Links without titles can be in the form of:
     - http://www.github.com 
     - <http://www.github.com> 
-    - github.com (may not work in certain previews)
+    - github.com (May not work in certain previews)
 
     [Titled link](http://www.github.com)
 
@@ -151,10 +171,10 @@ ___
 
     [Link to a relative repository file](../blob/../Git/Git%20Commands.pdf)
 
-Nameless links can be in the form of:
+Links without titles can be in the form of:
 - http://www.github.com 
 - <http://www.github.com> 
-- github.com (may not work in certain previews)
+- github.com (May not work in certain previews)
 
 [Titled link](http://www.github.com)
 
@@ -199,7 +219,7 @@ Referenced image link:
 
 
 ### Formatted Images:
-Use HTML syntax to format images. For example, resizing:
+Use HTML syntax to format images. For example, resizing: (May not work in certain previews)
 
     <img src="https://tinyurl.com/ydduzoo3" alt="michaelangelo" style="zoom: 50%;" />
 
@@ -209,13 +229,15 @@ Use HTML syntax to format images. For example, resizing:
 
 ## Videos
 
-### Embed a youtube video using the following format:
+### Embedded YouTube videos snippet template:
 
 `[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)`
+
+### For example:
     
     [![RickAstley](http://img.youtube.com/vi/lXMskKTw3Bc/0.jpg)](http://www.youtube.com/watch?v=lXMskKTw3Bc "Never Gonna Hit Those Notes")
 
-Results vary depending on the Markdown reader. (Not visible through Github)
+(May not work in certain previews)
 
 [![RickAstley](http://img.youtube.com/vi/lXMskKTw3Bc/0.jpg)](http://www.youtube.com/watch?v=lXMskKTw3Bc "Never Gonna Hit Those Notes")
 
@@ -228,7 +250,9 @@ Results vary depending on the Markdown reader. (Not visible through Github)
 
 Use the `run()` method to begin.
 
-### Indicate blocks of code using 3 backticks. Add the name of the programming language for proper syntax highlighting:
+### Indicate blocks of code using 3 backticks:
+
+Add the name of the programming language for proper syntax highlighting.
 
     ```Javascript
     var num = 0;
@@ -302,7 +326,7 @@ This is useful for features not built into Markdown such as image resizing and p
 
 ## Custom CSS
 
-Markdown accepts CSS syntax. However, results vary depending on the Markdown reader. The following stylization is not visible on Github:
+Markdown accepts CSS syntax:
 
     <style>
     h5 {
@@ -311,6 +335,8 @@ Markdown accepts CSS syntax. However, results vary depending on the Markdown rea
     </style>
 
     ##### Header 5 text
+
+(May not work in certain previews)
 
 <style>
     h5 {
