@@ -3,13 +3,13 @@ The flowinging cheat sheet is a summary of James Quick's tutorial. Go give him a
 
 <https://www.youtube.com/watch?v=pTCROLZLhDM>
 
-If using VSCode can press `ctrl+shift+v` or `command+v` to live preview markdown files.
+If using VSCode can press `ctrl+shift+v` or `command+v` to live preview Markdown files.
 Visual Studio Code uses the [CommonMark](http://commonmark.org/) Markdown specification.
 
 ---
 
 ## Headers
-Headers are defined by the '#'symbol.  One '#' for H1, two for H2, etc.
+Headers are defined using the '#' symbol:
 
     # H1 Header 
     ## H2 Header
@@ -27,14 +27,13 @@ Headers are defined by the '#'symbol.  One '#' for H1, two for H2, etc.
 ## Quotes
 
 
-Quotes are defined by the  '>' symbol 
+Quotes are defined using the  '>' symbol:
 
     > This is an example quote
 
-
 > This is an example
 
-Quotes can be added on top of other formatting. They are useful for TODO items
+Quotes can be added on top of other formatting. They are useful for TODO items:
 
     > **TODO** Fix bug
 
@@ -44,7 +43,7 @@ Quotes can be added on top of other formatting. They are useful for TODO items
 
 ## Emphasis
 
-Add emphasis with either asterisks and underscores. Whichever you prefer. Mix them together to create **bold** and _italicized_ text.
+Emphasis is added with either asterisks and underscores. Mix them together to create **bold** and _italicized_ text:
 
     *italicized text*
     **bold text**
@@ -64,8 +63,8 @@ _**bold and italicized text**_
 
 ---
 
-## Horizontal Rule Separators
-A horizontal rule gives a visible line break.  You can create one by putting three or more hypens, asterisks, or underscores (-, *, _).
+## Horizontal Separators
+Horizontal separators can be created with hypens, asterisks, or underscores:
 
     ---
     ***
@@ -75,11 +74,9 @@ A horizontal rule gives a visible line break.  You can create one by putting thr
 ***
 ___
 
-
-
 ## Lists
 
-Create unordered lists using '-', '*', or '+'. Whichever you prefer
+Create unordered lists using a plus, dash, or asterisk:
 
     - item a
     - item b
@@ -104,7 +101,7 @@ Create unordered lists using '-', '*', or '+'. Whichever you prefer
 + apples
 + oranges
 
-Create ordered lists using a number prefix. Unfortunately, sublist functionality is limited (have to start back at 1). 
+Create ordered lists using a number prefix. However, the format may change depending on the viewer:
 
     1. item 1
     2. item 2
@@ -121,17 +118,19 @@ Create ordered lists using a number prefix. Unfortunately, sublist functionality
 
 ## External and Internal Links
 
-Create a link by surrounding it with angle brackets. Can also name the link.
+Create a link by surrounding it with angle brackets:
 
     <http://www.github.com> 
 
-    [Link to github](http://www.github.com)
-
 <http://www.github.com> 
+
+Links also be named:
+
+    [Link to github](http://www.github.com)
 
 [Link to github](http://www.github.com)
 
-Create a reusable link (good practice)
+Reusable links can be made for code reusage:
 
         [1]: http://github.com/
         [Link to github][1]
@@ -139,11 +138,10 @@ Create a reusable link (good practice)
 [1]: http://github.com/
 [Link to github][1]
 
-Create a link to a location in your markdown page. Note that names must follow css convention. 
-
-(I.e. External and Internal Links -> external-and-internal-links)
+Links can be created for locations in your Markdown page:
 
     [Links](#external-and-internal-links)
+
     [Sections](#sections)
 
 [Links](#external-and-internal-links)
@@ -154,7 +152,7 @@ Create a link to a location in your markdown page. Note that names must follow c
 
 ## Images
 
-Defining an image is similar to defining a link, except you prefix it with '!'
+Links to images can also be defined:
 
 
     Example
@@ -163,7 +161,7 @@ Defining an image is similar to defining a link, except you prefix it with '!'
 
 ![Michaelangelo](https://i.kym-cdn.com/photos/images/original/000/377/873/c73.jpg) 
 
-Images links can also be reused
+Image links can also be optimized for code reusage:
 
     [Patrick]: https://i.kym-cdn.com/entries/icons/original/000/025/580/Screen_Shot_2018-03-01_at_12.59.37_PM.png
 
@@ -177,13 +175,13 @@ Images links can also be reused
 
 ## Code
 
-You can do inline code with backticks. They can be found on the tilda button. 
+You can do inline code with backticks. They can be found on the tilda button: 
 
     Use the `run()` method to begin.
 
 Use the `run()` method to begin.
 
-You can do blocks of code by surroung it with 3 backticks. You can also define the language for proper syntax highlighting.
+Blocks of code can be defined using 3 backticks. Add the name of the programming language for proper syntax highlighting:
 
     ```Javascript
     var num = 0;
@@ -212,9 +210,9 @@ Here's another example using HTML:
 ---
 
 ## Tables
-Creating tables
-- Header and row content defined between pipes (|)
-- Rows are separated with a row of dashes (---). At least 3 are reqired. 
+To create tables: 
+- Header and row content are defined between pipes ( | )
+- Rows are separated with at least 3 dashes (---)
 
         | Header 1    | Header 2    | Header 3    |
         | ----------- | ----------- | ----------- |
@@ -235,7 +233,7 @@ Avoid poor formatting because these can become hard to read:
 | ----| ---|
 |Loooooooooooooong item 1 | looooooooooong item 2 | 
 
-You can also define alignment for each row using colons
+You can also define alignment for each row using colons:
 
     | Header | Header 1 | Header 2  |
     | ------ | :------: | --------: |
@@ -248,60 +246,39 @@ You can also define alignment for each row using colons
 
 ## Custom HTML
 
-Since MarkDown gets automatically converted to HTML, you can add raw HTML directly to your MarkDown.
+Since Markdown gets automatically converted to HTML, you can add raw HTML directly to your Markdown:
 
     <h2>Header In HTML Syntax</h2>
 
 <h2>Header In HTML Syntax</h2>
 
-However, markdown syntax is almost always easier.
+However, Markdown syntax is almost always easier.
 
 ---
 
 ## Custom CSS
 
-You can also add custom CSS to your MarkDown to add additional styling to your document. You can also include CSS by including a style tag.
-
-    ```html
-    <style>
-        body {
-            color:red;
-        }
-    </style>
-    ```
-
-
-```html
-    <style>
-        body {
-            color:red;
-        }
-    </style>
-```
-
-For example, we could turn all heading 3 text red:
+You can also add custom CSS to your Markdown to add additional styling to your document. For example, we could turn all heading 3 text red. However, this only works with compatible previews:
 
     <style>
-    h3 {
+    h5 {
         color: red
     }
     </style>
 
-    ### Header 3 text
-
-
+    ##### Header 5 text
 
 <style>
-    h3 {
+    h5 {
         color: red
     }
 </style>
 
-### Header 3 text
+##### Header 5 text
 
 ---
 
 ## Additional Resources
 - [Markdown Cheat Sheet - Adam P on Github](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images)
 - [Daring Fireball Markdown Syntax](https://daringfireball.net/projects/markdown/syntax)
-- [MarkDown in Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)
+- [Markdown in Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)
