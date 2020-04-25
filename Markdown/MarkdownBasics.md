@@ -1,15 +1,29 @@
 # Markdown Cheat Sheet
-The flowinging cheat sheet is a summary of James Quick's tutorial. Go give him a view: 
 
-<https://www.youtube.com/watch?v=pTCROLZLhDM>
+Markdown is a text-to-HTML tool for web writers. It is a convient way to write notes that can be converted to HTML or PDF. You may recognize the `.md` format on your github repo `README.md` files.
 
 If using VSCode can press `ctrl+shift+v` or `command+v` to live preview Markdown files.
 Visual Studio Code uses the [CommonMark](http://commonmark.org/) Markdown specification.
 
+## Sections
+- [Headers](#headers)
+- [Quotes](#quotes)
+- [Emphasis](#emphasis)
+- [Horizontal-Separators](#horizontal-separators)
+- [Lists](#lists)
+- [Links](#links)
+- [Images](#images)
+- [Videos](#videos)
+- [Code](#code)
+- [Tables](#tables)
+- [Custom-HTML](#custom-html)
+- [Custom-CSS](#custom-css)
+- [Additional-Resources](#additional-resources)
+
 ---
 
 ## Headers
-Headers are defined using the '#' symbol:
+### Headers 1-6 are defined using the '#' symbol:
 
     # H1 Header 
     ## H2 Header
@@ -26,14 +40,13 @@ Headers are defined using the '#' symbol:
 
 ## Quotes
 
-
-Quotes are defined using the  '>' symbol:
+### Quotes are defined using the  '>' symbol:
 
     > This is an example quote
 
 > This is an example
 
-Quotes can be added on top of other formatting. They are useful for TODO items:
+### Quotes can be added on top of other formatting. They are useful for TODO items:
 
     > **TODO** Fix bug
 
@@ -43,28 +56,32 @@ Quotes can be added on top of other formatting. They are useful for TODO items:
 
 ## Emphasis
 
-Emphasis is added with either asterisks and underscores. Mix them together to create **bold** and _italicized_ text:
+### Words can be bolded, italicized, underlined, and striked:
 
-    *italicized text*
-    **bold text**
+    Bold using double **asterisks** or __underscores__
 
-    _italicized text_
-    __bold text__
+    Italicize using single *asterisks* or _underscores_
 
-    _**bold and italicized text**_
-    
-*italicized text*
-**bold text**
+    Underline using HTML <ins>ins tags</ins> or <u>u tags</u>
 
-_italicized text_
-__bold text__
+    Strikethrough using double ~~tildes~~ 
 
-_**bold and italicized text**_
+    Do multiple using a ~~<u>_**combination**_</u>~~ of the options
+
+Bold using double **asterisks** or __underscores__
+
+Italicize using single *asterisks* or _underscores_
+
+Underline using HTML <ins>ins tags</ins> or <u>u tags</u>
+
+Strikethrough using double ~~tildes~~ 
+
+Do multiple using a ~~<u>_**combination**_</u>~~ of the above
 
 ---
 
 ## Horizontal Separators
-Horizontal separators can be created with hypens, asterisks, or underscores:
+### Horizontal separators can be created with hypens, asterisks, or underscores:
 
     ---
     ***
@@ -76,15 +93,15 @@ ___
 
 ## Lists
 
-Create unordered lists using a plus, dash, or asterisk:
+### Create unordered lists using a plus, dash, or asterisk:
 
     - item a
     - item b
     - item c
 
-    * item 1
-      * item 1.1
-        * item 1.1.1
+    * list item 1
+      * sublist item 1.1
+        * sub-sublist item 1.1.1
 
     + apples
     + oranges
@@ -94,171 +111,198 @@ Create unordered lists using a plus, dash, or asterisk:
 - item b
 - item c
 
-* item 1
-  * item 1.1
-    * item 1.1.1
+* list item 1
+  * sublist item 1.1
+    * sub-sublist item 1.1.1
 
 + apples
 + oranges
 
-Create ordered lists using a number prefix. However, the format may change depending on the viewer:
+### Create ordered lists using a number prefix. Formats may vary with previewer:
 
     1. item 1
     2. item 2
-       1. dsfdsfsdf
+       1. item 2.1
     3. item 3 
 
 
 1. item 1
 2. item 2
-   1. dsfdsfsdf
+   1. item 2.1
 3. item 3 
 
 ---
 
-## External and Internal Links
+## Links
 
-Create a link by surrounding it with angle brackets:
+### External Links:
 
-    <http://www.github.com> 
+    Nameless links can be in the form of:
+    - http://www.github.com 
+    - <http://www.github.com> 
+    - github.com (may not work in certain previews)
 
-<http://www.github.com> 
+    [Titled link](http://www.github.com)
 
-Links also be named:
+    [Titled link with hover description](http://www.github.com "Github Homepage")
 
-    [Link to github](http://www.github.com)
+    [1]: http://www.github.com
+    [Referencable link for code reuse][1]
 
-[Link to github](http://www.github.com)
+    [Link to a relative repository file](../blob/../Git/Git%20Commands.pdf)
 
-Reusable links can be made for code reusage:
+Nameless links can be in the form of:
+- http://www.github.com 
+- <http://www.github.com> 
+- github.com (may not work in certain previews)
 
-        [1]: http://github.com/
-        [Link to github][1]
+[Titled link](http://www.github.com)
 
-[1]: http://github.com/
-[Link to github][1]
+[Titled link with hover description](http://www.github.com "Github Homepage")
 
-Links can be created for locations in your Markdown page:
+[1]: http://www.github.com
+[Referencable link for code reuse][1]
 
-    [Links](#external-and-internal-links)
+[Link to a relative repository file](../blob/../Git/Git%20Commands.pdf)
 
-    [Sections](#sections)
+### Internal Links:
 
-[Links](#external-and-internal-links)
+    [Link to beginning of document](#markdown-cheat-sheet)
 
-[Images](#sections)
+    [Link to additional resources](#additional-resources)
+
+[Link to beginning of document](#markdown-cheat-sheet)
+
+[Link to additional resources](#additional-resources)
 
 ---
 
 ## Images
 
-Links to images can also be defined:
+### Unformatted images:
+
+    In-line image link
+    ![Github Logo](https://tinyurl.com/ydxejrh3) 
+
+    Referenced image link
+    [PatrickRef]: https://tinyurl.com/yafb79ct
+    ![SavagePatrick][PatrickRef]
+
+In-line image link:
+
+![Inline](https://tinyurl.com/ydxejrh3) 
+
+Referenced image link:
+
+[PatrickReference]: https://tinyurl.com/yafb79ct
+![SavagePatrick][PatrickReference]
 
 
-    Example
+### Formatted Images:
+Use HTML syntax to format images. For example, resizing:
 
-    ![Michaelangelo](https://i.kym-cdn.com/photos/images/original/000/377/873/c73.jpg) 
+    <img src="https://tinyurl.com/ydduzoo3" alt="michaelangelo" style="zoom: 50%;" />
 
-![Michaelangelo](https://i.kym-cdn.com/photos/images/original/000/377/873/c73.jpg) 
-
-Image links can also be optimized for code reusage:
-
-    [Patrick]: https://i.kym-cdn.com/entries/icons/original/000/025/580/Screen_Shot_2018-03-01_at_12.59.37_PM.png
-
-    ![SavagePatrick][Patrick]
-
-[Patrick]: https://i.kym-cdn.com/entries/icons/original/000/025/580/Screen_Shot_2018-03-01_at_12.59.37_PM.png
-
-![SavagePatrick][Patrick] 
+<img src="https://tinyurl.com/ydduzoo3" alt="michaelangelo" style="zoom: 50%;" />
 
 ---
 
+## Videos
+
+### Embed a youtube video using the following format:
+
+`[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)`
+    
+    [![RickAstley](http://img.youtube.com/vi/lXMskKTw3Bc/0.jpg)](http://www.youtube.com/watch?v=lXMskKTw3Bc "Never Gonna Hit Those Notes")
+
+Results vary depending on the Markdown reader. (Not visible through Github)
+
+[![RickAstley](http://img.youtube.com/vi/lXMskKTw3Bc/0.jpg)](http://www.youtube.com/watch?v=lXMskKTw3Bc "Never Gonna Hit Those Notes")
+
+
 ## Code
 
-You can do inline code with backticks. They can be found on the tilda button: 
+### Indicate inline code with backticks found on the tilde key:
 
     Use the `run()` method to begin.
 
 Use the `run()` method to begin.
 
-Blocks of code can be defined using 3 backticks. Add the name of the programming language for proper syntax highlighting:
+### Indicate blocks of code using 3 backticks. Add the name of the programming language for proper syntax highlighting:
 
     ```Javascript
     var num = 0;
     var num2 = 0;
+    ```
+    ```html 
+    <div>
+        <p>This is an html example</p>
+    </div>
+    ```
+    ```
+    def no_language_defined(a, b):
+        return a-b
     ```
 
 ```Javascript
 var num = 0;
 var num2 = 0;
 ```
-
-Here's another example using HTML:
-
-    ```html 
-    <div>
-        <p>This is an html example</p>
-    </div>
-    ```
-
 ```html 
 <div>
     <p>This is an html example</p>
 </div>
 ```
-
+```
+def no_language_defined(a, b):
+    return a-b
+```
 ---
 
 ## Tables
-To create tables: 
+### To create tables: 
 - Header and row content are defined between pipes ( | )
+  - Outer pipes are optional, alignment not necessary
 - Rows are separated with at least 3 dashes (---)
 
-        | Header 1    | Header 2    | Header 3    |
-        | ----------- | ----------- | ----------- |
-        | Row 1 Col 1 | Row 1 Col 2 | Row 1 Col 3 | 
+```
+| Header 1    | Header 2    | Header 3    |
+| ----------- | ----------- | ----------- |
+| Row 1 Col 1 | Row 1 Col 2 | Row 1 Col 3 | 
+```
 
 | Header 1    | Header 2    | Header 3    |
 | ----------- | ----------- | ----------- |
 | Row 1 Col 1 | Row 1 Col 2 | Row 1 Col 3 | 
 
 
-Avoid poor formatting because these can become hard to read:
+### Align column text using colons:
 
-    | Header 1 | Header 2 |
-    | ----| ---|
-    |Loooooooooooooong item 1 | looooooooooong item 2 | 
+    | Header   | Header 1 | Header 2 |
+    | -------- | :------: | -------: |
+    | Left     | Center   | Right    | 
 
-| Header 1 | Header 2 |
-| ----| ---|
-|Loooooooooooooong item 1 | looooooooooong item 2 | 
+| Header   | Header 1 | Header 2 |
+| -------- | :------: | -------: |
+| Left     | Center   | Right    | 
 
-You can also define alignment for each row using colons:
-
-    | Header | Header 1 | Header 2  |
-    | ------ | :------: | --------: |
-    | Aligned Left | Aligned Center | Aligned Right | 
-
-| Header | Header 1 | Header 2  |
-| ------ | :------: | --------: |
-| Aligned Left | Aligned Center | Aligned Right | 
 ---
 
 ## Custom HTML
 
-Since Markdown gets automatically converted to HTML, you can add raw HTML directly to your Markdown:
+Markdown accepts HTML syntax:
 
-    <h2>Header In HTML Syntax</h2>
+    <h3>H3 Header In HTML Syntax</h3>
 
-<h2>Header In HTML Syntax</h2>
+<h3>H3 Header In HTML Syntax</h3>
 
-However, Markdown syntax is almost always easier.
+This is useful for features not built into Markdown such as image resizing and page customization. 
 
 ---
 
 ## Custom CSS
 
-You can also add custom CSS to your Markdown to add additional styling to your document. For example, we could turn all heading 3 text red. However, this only works with compatible previews:
+Markdown accepts CSS syntax. However, results vary depending on the Markdown reader. The following stylization is not visible on Github:
 
     <style>
     h5 {
@@ -279,6 +323,15 @@ You can also add custom CSS to your Markdown to add additional styling to your d
 ---
 
 ## Additional Resources
-- [Markdown Cheat Sheet - Adam P on Github](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images)
+
+This cheat sheet was constructed using information from:
+- [James Quick's Markdown Worksheet](https://github.com/jamesqquick/markdown-worksheet/blob/master/worksheet.md)
+- [Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+Official Documentation:
 - [Daring Fireball Markdown Syntax](https://daringfireball.net/projects/markdown/syntax)
 - [Markdown in Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)
+
+Recommended Markdown editors:
+- [Typora](https://typora.io/)
+- [Bear](https://bear.app/) - iOS only :(
