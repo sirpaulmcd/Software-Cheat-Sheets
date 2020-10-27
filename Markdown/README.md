@@ -61,9 +61,9 @@ Alternative H2 Header
 
 ### Quotes can be added on top of other formatting. They are useful for TODO items:
 
-    > **TODO** Fix bug
+    > **TODO** Eat pasta
 
-> **TODO** Fix bug
+> **TODO** Eat pasta
 
 ---
 
@@ -79,7 +79,7 @@ Alternative H2 Header
 
     Strikethrough using double ~~tildes~~ 
 
-    Do multiple using a ~~<u>_**combination**_</u>~~ of the options
+    Do multiple using a <ins>~~_**combination**_~~</ins> of the above
 
 Bold using double **asterisks** or __underscores__
 
@@ -89,7 +89,7 @@ Underline using HTML <ins>ins tags</ins>
 
 Strikethrough using double ~~tildes~~ 
 
-Do multiple using a ~~<u>_**combination**_</u>~~ of the above
+Do multiple using a <ins>~~_**combination**_~~</ins> of the above
 
 ---
 
@@ -219,25 +219,31 @@ Referenced image link:
 
 
 ### Formatted Images:
-Use HTML syntax to format images. For example, resizing: (May not work in certain previews)
+Use HTML syntax to format images. For example, resizing and centering:
 
-    <img src="https://tinyurl.com/ydduzoo3" alt="michaelangelo" style="zoom: 50%;" />
+    <p align="center">
+        <img src="https://tinyurl.com/ydduzoo3" alt="michaelangelo" width="200" height="200" />
+    </p>
 
-<img src="https://tinyurl.com/ydduzoo3" alt="michaelangelo" style="zoom: 50%;" />
+<p align="center">
+    <img src="https://tinyurl.com/ydduzoo3" alt="michaelangelo" width="200" height="200" />
+</p>
 
 ---
 
 ## Videos
 
 ### Embedded YouTube videos snippet template:
+Unfortnately, videos cannot be embedded into standard markdown. One workaround is to use the thumbnail image of the video as the link to the video.
+This can be done easily by pasting the youtube video ID into the the following template:
 
-`[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)`
+    [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 
 ### For example:
-    
-    [![RickAstley](http://img.youtube.com/vi/lXMskKTw3Bc/0.jpg)](http://www.youtube.com/watch?v=lXMskKTw3Bc "Never Gonna Hit Those Notes")
-
-(May not work in certain previews)
+If the video I want to link is `https://www.youtube.com/watch?v=lXMskKTw3Bc`, then the video ID is `lXMskKTw3Bc`. 
+Therefore, after pasting the ID into the template, I have: 
+        
+    [![RickAstley](http://img.youtube.com/vi/lXMskKTw3Bc/0.jpg)](http://www.youtube.com/watch?v=lXMskKTw3Bc)
 
 [![RickAstley](http://img.youtube.com/vi/lXMskKTw3Bc/0.jpg)](http://www.youtube.com/watch?v=lXMskKTw3Bc "Never Gonna Hit Those Notes")
 
